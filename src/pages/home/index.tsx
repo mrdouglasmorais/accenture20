@@ -17,7 +17,6 @@ interface Repository {
     login: string,
     avatar_url: string
   }
-
 }
 
 const Home: React.FC = () => {

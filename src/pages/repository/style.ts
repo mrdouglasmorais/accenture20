@@ -76,7 +76,6 @@ export const RepositoryInfo = styled.section`
             }
         }
     }
-
 `
 
 export const Issues = styled.section`
