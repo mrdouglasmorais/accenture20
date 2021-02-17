@@ -77,6 +77,10 @@ const Repository: React.FC = () => {
 
   }, [params.repository])
 
+  function openTab(link: string) {
+    window.open(link, "_blank");
+  }
+
 
   return (
     <>
@@ -119,7 +123,7 @@ const Repository: React.FC = () => {
       { issues.map( issue => (
         <a 
           key={issue.id} 
-          href={issue.html_url}
+          onClick={() => openTab(issue.html_url)}
         >
         <div>
           <strong>{issue.title}</strong>
