@@ -13,7 +13,7 @@ interface RepositoryParam{
   repository: string
 }
 
-interface Repository {
+interface Repositorie {
   full_name: string,
   description: string,
   forks_count: number,
@@ -35,7 +35,7 @@ interface Issue{
 }
 
 const Repository: React.FC = () => {
-  const [ repository, setRepository ] = useState<Repository | null >(null)
+  const [ repository, setRepository ] = useState<Repositorie | null >(null)
   const [ issues, setIssues ] = useState<Issue[]>([])
   const { params } = useRouteMatch<RepositoryParam>()
 
