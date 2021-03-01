@@ -49,6 +49,7 @@
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/react-router-dom": "^5.1.7",
-    "@types/styled-components": "^5.1.7"
+    "@types/styled-components": "^5.1.7",
+    "eslint-config-react-app": "^6.0.0"
   }
 }
